@@ -1,75 +1,93 @@
-NIFTY 50 Volatility Forecasting with GARCH Models
-This project forecasts stock market volatility for the NIFTY 50 index using the Generalized Autoregressive Conditional Heteroskedasticity (GARCH) model. It leverages Python for data processing, Apache Spark for big data handling, Spark SQL for querying, and Plotly/Seaborn for visualizations. The project demonstrates skills in econometrics, time-series analysis, and big data, making it relevant for fintech roles at companies like Zerodha, Groww, or consulting firms like Deloitte.
-Project Structure
-nifty50_volatility_forecasting/
-├── data/                       # Historical and processed data
-├── src/                        # Source code
-│   ├── data_fetch.py           # Fetch NIFTY 50 data
-│   ├── preprocess_spark.py     # Preprocess with Spark
-│   ├── sql_queries.py          # SQL queries for analysis
-│   ├── garch_model.py          # GARCH(1,1) modeling
-│   └── visualize.py            # Plotly and Seaborn visualizations
-├── notebooks/                  # Jupyter notebooks for exploration
-│   └── exploration.ipynb       # Exploratory data analysis
-├── requirements.txt            # Dependencies
-└── README.md                   # Project documentation
+# 📈 NIFTY 50 Volatility Forecasting: Unveiling Market Dynamics with GARCH
 
-Prerequisites
+Welcome to a journey through the ups and downs of the Indian stock market! This project dives deep into the NIFTY 50 index, forecasting its volatility using the power of GARCH models, Apache Spark, and stunning visualizations. Whether you're a data enthusiast, a financial analyst, or a curious coder, this project offers insights into market behavior with a blend of statistical modeling and big data magic.
 
-Python 3.8+
-Apache Spark (with Java installed)
-Optional: AWS account for S3 storage
+---
 
-Install dependencies:
-pip install -r requirements.txt
+## 🌟 What’s This Project About?
 
-Usage
+Imagine trying to predict the heartbeat of the stock market—its volatility. That’s exactly what this project does for the NIFTY 50 index, India’s benchmark stock market index. Using historical data from 2014 to 2024, we:
 
-Fetch Data:
-python src/data_fetch.py
+- **Process massive datasets** with Apache Spark to compute log returns and range-based volatility.
+- **Forecast future volatility** with a GARCH(1,1) model, revealing patterns in market turbulence.
+- **Visualize trends** with Plotly (interactive HTML plots) and Seaborn (static PNGs), making the data come alive.
+- **Query insights** with Spark SQL to uncover high-volatility days and market trends.
 
-Downloads NIFTY 50 historical data using yfinance.
+This isn’t just about numbers—it’s about understanding the rhythm of the market and equipping yourself with tools to anticipate its next move.
 
-Preprocess Data:
-python src/preprocess_spark.py
+---
 
-Computes log returns using Spark.
+## 🛠️ Tech Stack: The Tools That Made It Happen
 
-Run SQL Queries:
-python src/sql_queries.py
+Here’s the lineup of technologies that powered this project:
 
-Analyzes high-volatility periods and yearly returns.
+- **Python 3.12.7 (Anaconda)**: The backbone of our coding adventure.
+- **PySpark 3.5.0**: For distributed data processing and SQL queries on large datasets.
+- **arch**: To fit and forecast with GARCH(1,1) models.
+- **Plotly 6.1.0**: For interactive visualizations (saved as HTML due to Kaleido hiccups).
+- **Seaborn & Matplotlib**: For crisp, static plots of volatility and volume trends.
 
-Fit GARCH Model:
-python src/garch_model.py
+---
 
-Fits GARCH(1,1) and forecasts volatility.
+## 📂 Project Structure: A Guided Tour
 
-Visualize Results:
-python src/visualize.py
+The project is organized for clarity and ease of use:
 
-Creates interactive (Plotly) and static (Seaborn) plots.
+- **`data_fetch.py`**: Fetches and merges NIFTY 50 historical data (2014–2024) into `data/nifty50_historical.csv`.
+- **`preprocess_spark.py`**: Uses Spark to compute log returns and range-based volatility, saving to `data/nifty50_processed.csv`.
+- **`sql_queries.py`**: Runs Spark SQL queries to identify high-volatility days and more.
+- **`garch_model.py`**: Fits a GARCH(1,1) model and forecasts 30-day volatility, saved to `data/garch_forecast.csv`.
+- **`visualize.py`**: Creates stunning visualizations of trends, volatility, and forecasts.
 
+### Outputs
+- **Processed Data**: `data/nifty50_processed_single.csv` (log returns, range-based volatility).
+- **Forecasts**: `data/garch_forecast.csv` (30-day volatility forecast).
+- **Visualizations**:
+  - `plots/closing_price_trend.html`: NIFTY 50 closing price trend (interactive Plotly HTML).
+  - `plots/range_volatility.png`: Range-based volatility over time (Seaborn).
+  - `plots/volume_vs_volatility.png`: Volume vs. volatility scatter plot (Seaborn).
+  - `plots/forecasted_volatility.html`: 30-day forecasted volatility (interactive Plotly HTML).
 
-Results
+---
 
-Fitted a GARCH(1,1) model to NIFTY 50 log returns, capturing volatility clustering.
-Forecasted 5-day volatility with RMSE evaluation against realized volatility.
-Visualizations highlight historical trends and forecast accuracy.
+## 🚀 How to Run This Project
 
-Applications
+Ready to dive in? Follow these steps to get the project up and running on your machine.
 
-Risk Management: Forecast volatility for Value-at-Risk (VaR) calculations.
-Option Pricing: Provide volatility inputs for Black-Scholes models.
-Portfolio Optimization: Adjust asset allocations based on predicted risk.
+### Prerequisites
+- Python 3.12.7 (Anaconda recommended).
+- Apache Spark 3.5.0 (configured for Windows).
+- Git (to clone the repository).
 
-Future Improvements
+### Steps
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Trishapaul5/nifty50_volatility_forecasting.git
+   cd nifty50_volatility_forecasting
 
-Implement asymmetric GARCH models (e.g., EGARCH, TARCH) to capture leverage effects.
-Integrate cloud storage (AWS S3, Google Cloud).
-Extend to individual stocks or other indices.
+  📊 Key Insights from the GARCH Model
+The GARCH(1,1) model revealed fascinating patterns in NIFTY 50 volatility:
 
-License
-MIT License
-Contact
-[Your Name] - [Your Email] - [LinkedIn Profile]
+High Volatility Persistence: alpha[1] + beta[1] = 0.9674, indicating that volatility tends to linger.
+Significant Parameters:
+ARCH term (alpha[1] = 0.1034): Recent shocks impact volatility.
+GARCH term (beta[1] = 0.8640): Past volatility strongly influences future volatility.
+Model Fit:
+Log-Likelihood: -3508.04
+AIC: 7024.08
+These insights highlight the market’s volatility clustering—periods of calm followed by turbulent storms.
+🌱 Future Enhancements
+This project is just the beginning! Here are some ideas to take it further:
+
+Extend the Data: Include 2025 data from NSE India for more recent insights.
+Explore New Models: Try EGARCH or TGARCH for asymmetric volatility effects.
+Build a Web App: Deploy with Flask or Streamlit to create an interactive dashboard for real-time forecasts.
+🤝 Contributing
+Found a bug or have an idea to improve this project? Feel free to open an issue or submit a pull request! Let’s make this project even better together.
+
+📜 License
+This project is licensed under the MIT License—see the LICENSE file for details.
+👩‍💻 About the Author
+Hi, I’m Trishapaul5! I’m passionate about data science, financial modeling, and building tools that make sense of complex systems. Connect with me on GitHub or LinkedIn to chat about markets, code, or anything in between!
+
+Happy forecasting! 📉📈
