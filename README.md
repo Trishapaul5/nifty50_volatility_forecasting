@@ -82,12 +82,16 @@ This project is just the beginning! Here are some ideas to take it further:
 Extend the Data: Include 2025 data from NSE India for more recent insights.
 Explore New Models: Try EGARCH or TGARCH for asymmetric volatility effects.
 Build a Web App: Deploy with Flask or Streamlit to create an interactive dashboard for real-time forecasts.
+
 🤝 Contributing
+
 Found a bug or have an idea to improve this project? Feel free to open an issue or submit a pull request! Let’s make this project even better together.
 
 📜 License
 This project is licensed under the MIT License—see the LICENSE file for details.
+
 👩‍💻 About the Author
+
 Hi, I’m Trishapaul5! I’m passionate about data science, financial modeling, and building tools that make sense of complex systems. Connect with me on GitHub or LinkedIn to chat about markets, code, or anything in between!
 
 Happy forecasting! 📉📈
