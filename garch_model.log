@@ -1,0 +1,29 @@
+2025-05-19 11:59:56,619 - INFO - Starting GARCH modeling
+2025-05-19 11:59:56,671 - INFO - Loaded data from data/nifty50_processed_single.csv
+2025-05-19 11:59:56,720 - INFO - Fitted GARCH(1,1) model
+2025-05-19 11:59:56,737 - INFO -                      Constant Mean - GARCH Model Results                      
+==============================================================================
+Dep. Variable:             log_return   R-squared:                       0.000
+Mean Model:             Constant Mean   Adj. R-squared:                  0.000
+Vol Model:                      GARCH   Log-Likelihood:               -3508.04
+Distribution:                  Normal   AIC:                           7024.08
+Method:            Maximum Likelihood   BIC:                           7047.72
+                                        No. Observations:                 2720
+Date:                Mon, May 19 2025   Df Residuals:                     2719
+Time:                        11:59:56   Df Model:                            1
+                                Mean Model                                
+==========================================================================
+                 coef    std err          t      P>|t|    95.0% Conf. Int.
+--------------------------------------------------------------------------
+mu             0.0765  1.677e-02      4.561  5.096e-06 [4.360e-02,  0.109]
+                              Volatility Model                              
+============================================================================
+                 coef    std err          t      P>|t|      95.0% Conf. Int.
+----------------------------------------------------------------------------
+omega          0.0315  1.053e-02      2.989  2.797e-03 [1.084e-02,5.212e-02]
+alpha[1]       0.1034  2.410e-02      4.288  1.799e-05   [5.612e-02,  0.151]
+beta[1]        0.8640  2.921e-02     29.580 2.677e-192     [  0.807,  0.921]
+============================================================================
+
+Covariance estimator: robust
+2025-05-19 11:59:56,772 - INFO - Saved GARCH forecast to data/garch_forecast.csv

@@ -1,0 +1,82 @@
+2025-05-16 22:58:04,707 - INFO - Fetching NIFTY 50 data from 2010-01-01 to 2025-05-16
+2025-05-16 22:58:06,554 - ERROR - 
+1 Failed download:
+2025-05-16 22:58:06,554 - ERROR - ['^NSEI']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-05-16 22:58:06,589 - ERROR - No data retrieved from yfinance
+2025-05-16 22:58:06,589 - ERROR - Failed to fetch or save data: No data retrieved for ^NSEI
+2025-05-16 22:59:06,594 - INFO - Fetching NIFTY 50 data from 2010-01-01 to 2025-05-16
+2025-05-16 22:59:07,982 - ERROR - 
+1 Failed download:
+2025-05-16 22:59:07,984 - ERROR - ['^NSEI']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-05-16 22:59:07,993 - ERROR - No data retrieved from yfinance
+2025-05-16 22:59:07,994 - ERROR - Failed to fetch or save data: No data retrieved for ^NSEI
+2025-05-16 23:00:07,995 - INFO - Fetching NIFTY 50 data from 2010-01-01 to 2025-05-16
+2025-05-16 23:00:09,363 - ERROR - 
+1 Failed download:
+2025-05-16 23:00:09,363 - ERROR - ['^NSEI']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-05-16 23:00:09,369 - ERROR - No data retrieved from yfinance
+2025-05-16 23:00:09,370 - ERROR - Failed to fetch or save data: No data retrieved for ^NSEI
+2025-05-16 23:00:09,371 - ERROR - Script execution failed: No data retrieved for ^NSEI
+2025-05-16 23:54:58,712 - INFO - Fetching NIFTY 50 data from 2020-01-01 to 2025-05-16
+2025-05-16 23:55:00,564 - ERROR - 
+1 Failed download:
+2025-05-16 23:55:00,565 - ERROR - ['^NSEI']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-05-16 23:55:00,599 - ERROR - No data retrieved from yfinance
+2025-05-16 23:55:00,600 - ERROR - Failed to fetch or save data: No data retrieved for ^NSEI
+2025-05-16 23:56:00,601 - INFO - Fetching NIFTY 50 data from 2020-01-01 to 2025-05-16
+2025-05-16 23:56:02,254 - ERROR - 
+1 Failed download:
+2025-05-16 23:56:02,254 - ERROR - ['^NSEI']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-05-16 23:56:02,265 - ERROR - No data retrieved from yfinance
+2025-05-16 23:56:02,266 - ERROR - Failed to fetch or save data: No data retrieved for ^NSEI
+2025-05-16 23:57:02,314 - INFO - Fetching NIFTY 50 data from 2020-01-01 to 2025-05-16
+2025-05-16 23:57:05,396 - ERROR - 
+1 Failed download:
+2025-05-16 23:57:05,397 - ERROR - ['^NSEI']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-05-16 23:57:05,563 - ERROR - No data retrieved from yfinance
+2025-05-16 23:57:05,564 - ERROR - Failed to fetch or save data: No data retrieved for ^NSEI
+2025-05-16 23:57:05,574 - ERROR - Script execution failed: No data retrieved for ^NSEI
+2025-05-17 01:45:25,647 - INFO - Processing NSE CSV files from C:/Users/user/Downloads/nifty50_csvs
+2025-05-17 01:45:25,649 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2014.csv
+2025-05-17 01:45:25,675 - ERROR - Failed to process NSE data: "None of [Index(['Date', 'Close'], dtype='object')] are in the [columns]"
+2025-05-17 01:45:25,675 - ERROR - Script execution failed: "None of [Index(['Date', 'Close'], dtype='object')] are in the [columns]"
+2025-05-17 02:14:10,802 - INFO - Processing NSE CSV files from C:/Users/user/Downloads/nifty50_csvs
+2025-05-17 02:14:10,804 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2014.csv
+2025-05-17 02:14:10,837 - ERROR - Failed to process NSE data: "Required columns 'Date' and 'Close' not found in C:/Users/user/Downloads/nifty50_csvs\\nifty50_2014.csv"
+2025-05-17 02:14:10,837 - ERROR - Script execution failed: "Required columns 'Date' and 'Close' not found in C:/Users/user/Downloads/nifty50_csvs\\nifty50_2014.csv"
+2025-05-17 02:25:40,859 - INFO - Processing NSE CSV files from C:/Users/user/Downloads/nifty50_csvs
+2025-05-17 02:25:40,861 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2014.csv
+2025-05-17 02:25:40,907 - ERROR - Failed to process NSE data: unconverted data remains when parsing with format "%d-%b-%y": "14", at position 0. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+2025-05-17 02:25:40,910 - ERROR - Script execution failed: unconverted data remains when parsing with format "%d-%b-%y": "14", at position 0. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+2025-05-17 02:28:06,860 - INFO - Processing NSE CSV files from C:/Users/user/Downloads/nifty50_csvs
+2025-05-17 02:28:06,862 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2014.csv
+2025-05-17 02:28:06,907 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2015.csv
+2025-05-17 02:28:06,916 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2016.csv
+2025-05-17 02:28:06,968 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2017.csv
+2025-05-17 02:28:06,999 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2018.csv
+2025-05-17 02:28:07,027 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2019.csv
+2025-05-17 02:28:07,054 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2020.csv
+2025-05-17 02:28:07,086 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2021.csv
+2025-05-17 02:28:07,116 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2022.csv
+2025-05-17 02:28:07,154 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2023.csv
+2025-05-17 02:28:07,183 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2024.csv
+2025-05-17 02:28:07,232 - INFO - Combined data saved to data/nifty50_historical.csv
+2025-05-17 02:38:57,043 - INFO - Processing NSE CSV files from C:/Users/user/Downloads/nifty50_csvs
+2025-05-17 02:38:57,046 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2014.csv
+2025-05-17 02:38:57,083 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2015.csv
+2025-05-17 02:38:57,092 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2016.csv
+2025-05-17 02:38:57,097 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2017.csv
+2025-05-17 02:38:57,102 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2018.csv
+2025-05-17 02:38:57,108 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2019.csv
+2025-05-17 02:38:57,115 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2020.csv
+2025-05-17 02:38:57,121 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2021.csv
+2025-05-17 02:38:57,127 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2022.csv
+2025-05-17 02:38:57,132 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2023.csv
+2025-05-17 02:38:57,138 - INFO - Reading C:/Users/user/Downloads/nifty50_csvs\nifty50_2024.csv
+2025-05-17 02:38:57,178 - INFO - Combined data saved to data/nifty50_historical.csv

@@ -1,0 +1,51 @@
+2025-05-19 12:00:11,900 - INFO - Starting visualization
+2025-05-19 12:00:11,917 - INFO - Loaded processed data
+2025-05-19 12:00:11,936 - INFO - Loaded forecast data
+2025-05-19 12:00:14,963 - ERROR - Failed to visualize data: 
+Image export using the "kaleido" engine requires the kaleido package,
+which can be installed using pip:
+    $ pip install -U kaleido
+
+2025-05-19 12:00:14,963 - ERROR - Script execution failed: 
+Image export using the "kaleido" engine requires the kaleido package,
+which can be installed using pip:
+    $ pip install -U kaleido
+
+2025-05-19 12:02:40,635 - INFO - Starting visualization
+2025-05-19 12:02:40,688 - INFO - Loaded processed data
+2025-05-19 12:02:40,693 - INFO - Loaded forecast data
+2025-05-19 12:21:53,360 - INFO - Starting visualization
+2025-05-19 12:21:53,399 - INFO - Loaded processed data
+2025-05-19 12:21:53,403 - INFO - Loaded forecast data
+2025-05-19 12:35:31,392 - INFO - Starting visualization
+2025-05-19 12:35:31,436 - INFO - Loaded processed data
+2025-05-19 12:35:31,439 - INFO - Loaded forecast data
+2025-05-19 12:57:31,759 - INFO - Starting visualization
+2025-05-19 12:57:31,795 - INFO - Loaded processed data
+2025-05-19 12:57:31,799 - INFO - Loaded forecast data
+2025-05-19 12:57:33,165 - INFO - Created closing price trend plot
+2025-05-19 12:57:33,185 - INFO - Saved closing price trend plot
+2025-05-19 12:57:33,886 - INFO - Saved range-based volatility plot
+2025-05-19 12:57:34,158 - INFO - Saved volume vs. volatility plot
+2025-05-19 12:57:34,207 - INFO - Saved forecasted volatility plot
+2025-05-19 13:09:10,160 - INFO - Starting visualization
+2025-05-19 13:09:10,195 - INFO - Loaded processed data
+2025-05-19 13:09:10,199 - INFO - Loaded forecast data
+2025-05-19 13:09:11,560 - INFO - Created closing price trend plot
+2025-05-19 13:09:11,574 - INFO - Saved closing price trend plot
+2025-05-19 13:09:12,143 - INFO - Saved range-based volatility plot
+2025-05-19 13:09:12,439 - INFO - Saved volume vs. volatility plot
+2025-05-19 13:09:12,503 - INFO - Saved forecasted volatility plot
+2025-05-19 13:16:13,595 - INFO - Starting visualization
+2025-05-19 13:16:13,596 - INFO - Current working directory: C:\Users\user\Downloads\nifty50_volatility_forecasting
+2025-05-19 13:16:13,597 - INFO - Plots directory: C:\Users\user\Downloads\nifty50_volatility_forecasting\plots
+2025-05-19 13:16:13,638 - INFO - Loaded processed data
+2025-05-19 13:16:13,641 - INFO - Loaded forecast data
+2025-05-19 13:16:15,201 - INFO - Created closing price trend plot
+2025-05-19 13:16:15,287 - INFO - Saved closing price trend plot (HTML) to C:\Users\user\Downloads\nifty50_volatility_forecasting\plots\closing_price_trend.html
+2025-05-19 13:16:15,287 - INFO - Verified: closing_price_trend.html exists at C:\Users\user\Downloads\nifty50_volatility_forecasting\plots\closing_price_trend.html
+2025-05-19 13:16:15,998 - INFO - Saved range-based volatility plot to C:\Users\user\Downloads\nifty50_volatility_forecasting\plots\range_volatility.png
+2025-05-19 13:16:16,370 - INFO - Saved volume vs. volatility plot to C:\Users\user\Downloads\nifty50_volatility_forecasting\plots\volume_vs_volatility.png
+2025-05-19 13:16:16,458 - INFO - Created forecasted volatility plot
+2025-05-19 13:16:16,530 - INFO - Saved forecasted volatility plot (HTML) to C:\Users\user\Downloads\nifty50_volatility_forecasting\plots\forecasted_volatility.html
+2025-05-19 13:16:16,530 - INFO - Verified: forecasted_volatility.html exists at C:\Users\user\Downloads\nifty50_volatility_forecasting\plots\forecasted_volatility.html

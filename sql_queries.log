@@ -1,0 +1,6 @@
+2025-05-19 11:58:16,117 - INFO - Starting SQL queries
+2025-05-19 11:58:49,489 - INFO - Loaded data from data/nifty50_processed_single.csv
+2025-05-19 11:58:49,550 - INFO - Query 1: Top 10 high-volatility days
+2025-05-19 11:58:50,612 - INFO - Query 2: Top 10 days with highest trading volume
+2025-05-19 11:58:51,115 - INFO - Query 3: Average range-based volatility by year
+2025-05-19 11:58:53,318 - INFO - Closing down clientserver connection
